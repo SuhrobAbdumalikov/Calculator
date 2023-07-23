@@ -1,0 +1,53 @@
+@import '../layout';
+$backgroundColor:grey;
+$calculatorBackColor:black;
+$ACcolor:#AAAAAA;
+$numbersColor:white;
+$AllBntColor:#555555;
+$AllOperatorsColor:#FF9300;
+.container {
+    background-color: #333;
+    .calculator-content{
+        background-color: $calculatorBackColor;
+        padding: 25px 15px;
+        border-radius:15px;
+        .output-elements{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            width: 310px;
+            margin-top:5px;
+            color:white;
+            background-color: $calculatorBackColor;
+            border:none;
+            font-size: 40px;
+        }
+        .number{
+            @include AllBtn();
+            cursor: pointer;
+            background-color: $AllBntColor;
+            width: 70px;
+            height: 70px;
+            border-radius:50%;
+            border:none;
+            margin:3px;
+            font-size:27px;
+            color:$numbersColor;
+        }
+        .operator{
+            background-color: $AllOperatorsColor;
+            font-size: 30px;
+            margin: 0 auto;
+        }
+        .bigBtn1{
+            width: 230px;
+            border-radius:50px;
+            background-color: $ACcolor;
+        }
+        .bigBtn2{
+            width: 151px;
+            border-radius:50px;
+        }
+    }
+}

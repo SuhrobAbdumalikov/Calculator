@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sass/style/MainStyle.css"/>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container d-flex">
+        <div class="calculator-content">
+            <div class="outputElements">
+                <input type="text" class="output-elements prev">
+                <!-- <input type="text" class="output-elements operation">
+                <input type="text" class="output-elements current">
+                <input type="text" class="output-elements display"> -->
+                <!-- <div class="previous-operator" id="dta-previous-operator"></div>
+                <div class="current-operator" id="dta-current-operator"></div> -->
+            </div>
+            <button class="number bigBtn1" id="dtaClearAll" onclick="clearAll()">AC</button>
+            <button class="number operator" id="dtaOperator" onclick="disPlay('÷')">÷</button>
+            <div class="4talik-btns">
+                <div class="first-4talik-btn">
+                    <button class="number" id="dtaNumber" onclick="disPlay(7)">7</button>
+                    <button class="number" id="dtaNumber" onclick="disPlay(8)">8</button>
+                    <button class="number" id="dtaNumber" onclick="disPlay(9)">9</button>
+                    <button class="number operator" id="dtaOperator" onclick="disPlay('×')">×</button>
+                </div>
+                <div class="second-4talik-btn">
+                    <button class="number" id="dtaNumber" onclick="disPlay(4)">4</button>
+                    <button class="number" id="dtaNumber" onclick="disPlay(5)">5</button>
+                    <button class="number" id="dtaNumber" onclick="disPlay(6)">6</button>
+                    <button class="number operator" id="dtaOperator" onclick="disPlay('-')">-</button>
+                </div>
+                <div class="third-4talik-btn">
+                    <button class="number" id="dtaNumber" onclick="disPlay(1)">1</button>
+                    <button class="number" id="dtaNumber" onclick="disPlay(2)">2</button>
+                    <button class="number" id="dtaNumber" onclick="disPlay(3)">3</button>
+                    <button class="number operator" id="dtaOperator" onclick="disPlay('+')">+</button>
+                </div>
+            </div>
+            <button class="number bigBtn2" id="dtaNumber" onclick="disPlay(0)">0</button>
+            <button class="number" id="dtaNumber" onclick="disPlay('.')">.</button>
+            <button class="number operator" id="dtaEqual" onclick="">=</button>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+</html>
