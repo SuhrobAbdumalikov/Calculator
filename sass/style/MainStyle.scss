@@ -11,17 +11,18 @@ $AllOperatorsColor:#FF9300;
         background-color: $calculatorBackColor;
         padding: 25px 15px;
         border-radius:15px;
-        .output-elements{
+        .outputElements{
             display: flex;
             justify-content: center;
-            align-items: center;
-            height: 150px;
-            width: 310px;
-            margin-top:5px;
-            color:white;
-            background-color: $calculatorBackColor;
-            border:none;
-            font-size: 40px;
+            .output-elements{
+                text-align:right;
+                height: 100px;
+                width: 310px;
+                color:white;
+                background-color: $calculatorBackColor;
+                border:none;
+                font-size: 40px;
+            }
         }
         .number{
             @include AllBtn();

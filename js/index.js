@@ -19,7 +19,12 @@ function disPlay(valu) {
     return valu
 }
 
+//function eval solve the masala
+function solve() {  
+    let x = displayOutput.value
+    let y = eval(x)
+    displayOutput.value = y
+    return y
+}
 
-// function operations(val) {
-//     return disPlay(valu)(val);
-// }
+
