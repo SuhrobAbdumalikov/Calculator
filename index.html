@@ -11,32 +11,32 @@
     <div class="container d-flex">
         <div class="calculator-content">
             <div class="outputElements">
-                <input type="text" class="output-elements prev" name="disPlay">
+                <input type="text" class="output-elements prev" value="0">
             </div>
-            <button class="number bigBtn1" id="dtaClearAll" onclick="clearAll()">AC</button>
-            <button class="number operator" id="dtaOperator" onclick="disPlay('/')">÷</button>
+            <button class="number bigBtn1" id="dtaClearAll">AC</button>
+            <button class="number operator" id="allOperators" onclick="addOperator('/')">&divide;</button>
             <div class="4talik-btns">
                 <div class="first-4talik-btn">
-                    <button class="number" id="dtaNumber" onclick="disPlay(7)">7</button>
-                    <button class="number" id="dtaNumber" onclick="disPlay(8)">8</button>
-                    <button class="number" id="dtaNumber" onclick="disPlay(9)">9</button>
-                    <button class="number operator" id="dtaOperator" onclick="disPlay('*')">×</button>
+                    <button class="number" onclick="disPlay(7)">7</button>
+                    <button class="number" onclick="disPlay(8)">8</button>
+                    <button class="number" onclick="disPlay(9)">9</button>
+                    <button class="number operator" id="allOperators" onclick="addOperator('*')">&times;</button>
                 </div>
                 <div class="second-4talik-btn">
-                    <button class="number" id="dtaNumber" onclick="disPlay(4)">4</button>
-                    <button class="number" id="dtaNumber" onclick="disPlay(5)">5</button>
-                    <button class="number" id="dtaNumber" onclick="disPlay(6)">6</button>
-                    <button class="number operator" id="dtaOperator" onclick="disPlay('-')">-</button>
+                    <button class="number" onclick="disPlay(4)">4</button>
+                    <button class="number" onclick="disPlay(5)">5</button>
+                    <button class="number" onclick="disPlay(6)">6</button>
+                    <button class="number operator" id="allOperators" onclick="addOperator('-')">&minus;</button>
                 </div>
                 <div class="third-4talik-btn">
-                    <button class="number" id="dtaNumber" onclick="disPlay(1)">1</button>
-                    <button class="number" id="dtaNumber" onclick="disPlay(2)">2</button>
-                    <button class="number" id="dtaNumber" onclick="disPlay(3)">3</button>
-                    <button class="number operator" id="dtaOperator" onclick="disPlay('+')">+</button>
+                    <button class="number" onclick="disPlay(1)">1</button>
+                    <button class="number" onclick="disPlay(2)">2</button>
+                    <button class="number" onclick="disPlay(3)">3</button>
+                    <button class="number operator"id="allOperators" onclick="addOperator('+')">&plus;</button>
                 </div>
             </div>
-            <button class="number bigBtn2" id="dtaNumber" onclick="disPlay(0)">0</button>
-            <button class="number" id="dtaNumber" onclick="disPlay('.')">.</button>
+            <button class="number bigBtn2" onclick="disPlay(0)">0</button>
+            <button class="number" id="fullStop" onclick="fullStop()">,</button>
             <button class="number operator" id="dtaEqual" onclick="solve()">=</button>
         </div>
     </div>

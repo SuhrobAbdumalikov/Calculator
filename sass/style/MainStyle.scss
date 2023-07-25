@@ -15,6 +15,9 @@ $AllOperatorsColor:#FF9300;
             display: flex;
             justify-content: center;
             .output-elements{
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
                 text-align:right;
                 height: 100px;
                 width: 310px;
@@ -22,6 +25,8 @@ $AllOperatorsColor:#FF9300;
                 background-color: $calculatorBackColor;
                 border:none;
                 font-size: 40px;
+                border: 1px solid black;
+                outline: 1px solid black;
             }
         }
         .number{

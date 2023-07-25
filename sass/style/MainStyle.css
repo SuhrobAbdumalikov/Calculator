@@ -37,6 +37,9 @@
   justify-content: center;
 }
 .container .calculator-content .outputElements .output-elements {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
   text-align: right;
   height: 100px;
   width: 310px;
@@ -44,9 +47,11 @@
   background-color: black;
   border: none;
   font-size: 40px;
+  border: 1px solid black;
+  outline: 1px solid black;
 }
 .container .calculator-content .number {
-  transition: all 0.5s ease;
+  transition: all 0.1s ease;
   cursor: pointer;
   background-color: #555555;
   width: 70px;
